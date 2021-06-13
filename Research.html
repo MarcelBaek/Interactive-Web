@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redesigning of modefied</title>
+<link href="https://fonts.gogleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+ <style>
+font-family:'Noto Sans KR', sans-serif;
+
+body{
+	width:1920px;
+	height:2594px;
+  margin:0;
+  color:#363636;
+  background-color:#F9F8F8;
+}
+
+.whole{
+	width:1636px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.header{
+	height:172px;
+	background-color:white;
+	text-align:center;
+}
+
+.search{
+  width:340px;
+  height:120px;
+  display:inline-block;
+  position:relative;
+  right:120px;
+}
+
+.header .deleteline{
+  text-decoration:none;
+}
+
+.header .helper{
+height:100%;
+display:inline-block;
+vertical-align:middle;
+}
+
+.header .logo{
+ display:inline-block;
+ vertical-align:middle;
+ margin:0px;
+ height:120px;
+
+}
+
+
+.header .three-icons{
+                           /* 세 아이콘들의 묶음을 띄워서 오른쪽에 위치시켜라 */   
+ display:inline-block;
+ vertical-align:middle;
+ position:relative;
+ left:140px;
+}
+
+.three-icons a:not(:last-child){         /* 마지막을 제외한 요소들의 오른쪽 마진을 98px로 주어라. */
+ margin-right:60px;
+}
+
+.icon {
+  width:96px;
+  height:96px;
+}
+
+.navigation{
+	font-family:'Roboto', sans-serif;
+    display:inline-block;
+	background-color:coral;
+	width:1636px;
+    height:92px; 
+    text-align:center;
+    font-weight:bold;
+  
+}
+
+.navigation .helper{
+	height:100%;
+display:inline-block;
+vertical-align:middle;
+}
+
+
+.navigation .oneline{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.navigation a{
+	color:#363636;
+	text-decoration:none;
+	font-size:26px;
+	margin-right:96px;
+}
+
+.main {
+  display:inline-block;
+}
+
+.main h2{
+  font-family:'Roboto', sans-serif;
+  margin-top:40px;
+  font-size:26px;
+  margin-bottom:60px;
+  font-weight:bold;
+ 
+}
+
+
+.overview {
+  width:1636px;
+  height:394px;
+  display:inline-block;
+  background-color:#CBCACA;
+  text-align:center;
+}
+
+.marcelbaek h1 {
+  display:inline-block;
+  text-align:center;
+ margin-top:20px;
+ margin-left:40px;
+ font-size:26px;
+  font-family:'Roboto', sans-serif;
+  font-weight:bold;
+}
+
+.marcelbaek {
+  width:480px;
+  height:100px;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+margin-top:40px;
+}
+
+.marcelbaek .photo {
+  display:inline-block;
+  width:96px;
+  height:96px;
+
+}
+
+.fouricons {
+ display:inline-block;
+ width:780px;
+ height:160px;
+ margin-top:40px;
+text-decoration:none;
+text-align:center;
+}
+
+.firsticon {
+  width:140px;
+  height:140px;
+  display:inline-block;
+  text-decoration:none;
+  margin-left:auto;
+  margin-right:auto;
+  color:#363636;
+  
+}
+ .secondicon {
+  height:140px;
+  width:140px;
+  display:inline-block;
+    text-decoration:none;
+  color:#363636;
+  
+  
+}
+
+.thirdicon {
+  width:140px;
+  height:140px;
+  display:inline-block;
+    text-decoration:none;
+  color:#363636;
+
+ 
+}
+
+ .fourthicon {
+  width:140px;
+  height:140px;
+  display:inline-block;
+    text-decoration:none;
+  color:#363636;
+
+ }
+
+.fouricons a:not(:last-child){         /* 마지막을 제외한 요소들의 오른쪽 마진을 98px로 주어라. */
+ margin-right:60px;
+}
+
+.fouricons .text{
+  font-size:20.80px;
+  margin-top:10px;
+
+}
+
+.bigtwo {
+margin-top:80px;
+width:1636px;
+height:1300px;
+display:inline-block;
+}
+
+
+.move {
+display:inline-block;
+width:340px;
+height:970px;
+ text-decoration:none;
+ position:relative;
+ bottom:374px;
+}
+
+
+.move h1 {
+  font-size:26px;
+text-align:center;
+font-weight:bold;
+ font-family:'Roboto', sans-serif;
+
+}
+
+.moveinnavigation {
+display:inline-block;
+width:300px;
+height:900px;
+background-color:#EEEEEE;
+margin-top:40px;
+text-align:center;
+ text-decoration:none;
+
+}
+
+.moveinnavigation ul {
+  display:block;
+  list-style-type:none;
+  display:inline-block;
+  position:relative;
+  right:20px;
+}
+
+.moveinnavigation .name {
+ margin-bottom:40px;
+ margin-top:40px;
+ color:#363636;
+ font-size:26px;
+}
+
+.moveinnavigation .mystyle {
+  color:#363636;
+  font-size:20.80px;
+}
+
+.moveinnavigation .list{
+  color:#CBCACA;
+font-size:20.80px;
+text-decoration:none;
+}
+
+.moveinnavigation li{
+  margin-bottom:20px;
+}
+
+.style {
+  display:inline-block;
+  width:1216px;
+  height:1200px;
+  text-align:center;
+  margin-left:60px;
+}
+
+.style h1{
+ text-align:center;
+ font-size:26px;
+font-family:'Roboto', sans-serif;
+font-weight:bold;
+display:inline-block;
+}
+
+.stylesetting {
+  margin-top:40px;
+  width:1212px;
+  height:1206px;
+  display:inline-block;
+  background-color:gray;
+  text-align:center;
+}
+
+.stylesetting h1{
+  font-size:26px;
+  margin-top:40px;
+ margin-bottom:40px;
+}
+
+
+
+.topselection {
+width:800px;
+height:223px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+.price{
+margin-bottom:20px;
+}
+
+.color{
+margin-bottom:20px;
+}
+.type {
+margin-bottom:20px;
+}
+
+
+.bottomselection {
+
+width:800px;
+height:223px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+.outerselection {
+width:800px;
+height:223px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+.button {
+  display:inline-block;
+  margin-top:40px;
+  font-weight:400;
+  font-size:26px;
+
+
+}
+
+.reset{
+ text-decoration:none;
+ color:white;
+   display:inline-block;
+   background-color:#363636;
+   padding-top:10px;
+   padding-bottom:5px;
+   padding-left:10px;
+   padding-right:10px;
+}
+
+
+.save{
+ text-decoration:none;
+   display:inline-block;
+ color:white;
+ margin-left:80px;
+ background-color:coral;
+padding-top:20px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:20px;
+}
+
+
+
+.footer{
+  margin-top:80px;
+  height:360px;
+  background-color:#CBCACA;
+}
+
+.leftpart {
+  width:1000px;
+  height:360px;
+  margin-left:40px;  
+  display:inline-block;
+  position:relative;
+  bottom:60px;
+
+}
+
+ .fourwords{
+  margin-top:40px;
+  display:inline-block;
+ margin-right:40px;
+ font-size:26px;
+ text-decoration:none;
+ color:#363636;
+}
+
+.leftpart h4{
+  margin-top:40px;
+  font-size:16.64px;
+  color:#363636;
+}
+
+
+.leftpart p{
+  font-size:16.64px;
+  margin-top:40px;
+  color:#363636;
+}
+
+
+.rightpart {
+  display:inline-block;
+  width:532px;
+  height:360px;
+  text-align:center;
+  }
+
+.rightpart h2{ 
+font-weight:bold;
+font-size:26px;
+color:#363636;
+margin-bottom:40px;
+margin-top:40px;
+}
+
+.rightpart .icon{
+  display:block;
+  margin-bottom:40px;
+ margin-left:auto;
+  margin-right:auto;
+
+}
+
+
+
+ </style>
+
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+<div class="whole">
+
+
+<div class="header">
+   <div class="search">
+  <nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div>
+ <div class="helper"> </div> <a class="deleteline" href="*"> <img class="logo" src="https://i.postimg.cc/wvFZKYdy/Modified.jpg"> </a>
+ 
+ <div class="helper"> </div> <div class="three-icons">
+ <a class="deleteline" href="Research.html"> <img class="icon" src="https://i.postimg.cc/HsFncHrC/my-page.jpg" > </a>
+<a class="deleteline" href="*"> <img class="icon" src="https://i.postimg.cc/25D5Gwdc/heart.jpg" > </a>
+<a class="deleteline" href="*"> <img class="icon" src="https://i.postimg.cc/3wFxcvnK/cart.jpg"> </a>
+ 
+ </div>
+ </div>
+
+
+ <div class="navigation">
+ <div class="helper"> </div> <div class="oneline">
+ <a  href="*"> ABOUT </a>
+<a href="*"> GUIDE </a>
+<a href="*"> NOTICE </a>
+<a href="*"> MY PAGE </a>
+<a href="*"> CLOTHES </a>
+<a href="*"> COLLECTION </a>
+</div>
+</div>
+
+<div class="main">
+<h2> 마이페이지 홈 </h2>
+<div class="overview">
+  <div class="marcelbaek">
+  <img class="photo" src="https://i.postimg.cc/vBwTv3fS/Marcel-Baek.jpg">
+ <h1> ID: Marcelbaek (백준호님) </h1>
+ </div>
+<div class="fouricons">
+
+<a href="#" class="firsticon">
+<img class="icon" src="https://i.postimg.cc/K8m50Drj/image.jpg">
+<p class="text"> 적립금: 0원 </p>
+</a>
+
+<a href="#" class="secondicon">
+<img class="icon" src="https://i.postimg.cc/vmNLHFRx/image.jpg">
+<p class="text"> 포인트:3,000 </p>
+</a>
+
+<a href="#" class="thirdicon">
+<img class="icon" src="https://i.postimg.cc/jqNQKFMC/coupon.jpg">
+<p class="text"> 쿠폰:4장  </p>
+</a>
+
+<a href="#" class="fourthicon">
+<img class="icon" src="https://i.postimg.cc/QCsBj0MW/review.jpg">
+<p class="text"> 후기 작성:0 </p>
+</a>
+</div>
+</div>
+
+<div class="bigtwo">
+
+<div class="move">
+<h1> 마이페이지 내 이동 </h1>
+<div class="moveinnavigation">
+ <ul class="information">
+<li class="name"> 회원정보관리 </li>
+ <a  class="list" href="#"> <li> 회원정보수정 </li> </a>
+ <a  class="list" href="#"> <li> 추가정보입력 </li> </a>
+ <a  class="list" href="#"> <li> 회원탈퇴 </li> </a>
+</ul>
+
+ <ul class="shopping">
+ <li class="name"> 나의 쇼핑 활동 </li>
+  <li class="mystyle"> 나의 스타일  설정 </li> 
+ <a  class="list" href="#"> <li> 주문 내역 조회  </li> </a>
+ <a  class="list" href="#"> <li> 상품 문의 </li> </a>
+<a  class="list" href="#"> <li > 1:1 문의 </li> </a>
+<a  class="list" href="#"> <li > 최근에 본 상품 </li> </a>
+<a  class="list" href="#"> <li > 좋아요 </li> </a>
+<a  class="list" href="#"> <li > 구매 후기 </li> </a>
+</ul>
+
+</div>
+</div>
+<div class="style">
+  <h1> 나의 스타일  설정 </h1>
+<div class="stylesetting">
+  <h1> 상의 </h1> 
+<div class="topselection">
+<div class="type">
+<select class="form-select" aria-label="Default select example">
+  <option selected>상의의 종류 중에 가장 선호하는 것을 알려주세요. </option>
+  <option value="1">셔츠</option>
+  <option value="2">티 셔츠</option>
+  <option value="3">맨투맨(스웨트 셔츠) </option> 
+  <option value="4">피케 셔츠(폴로 셔츠)</option> 
+</select>
+</div>
+<div class="price">
+<select class="form-select" aria-label="Default select example">
+  <option selected>상의의 가격으로 가장 선호하는 것을 알려주세요.</option>
+  <option value="1">3만원 이하</option>
+  <option value="2">3만원 이상 5만원 미만</option>
+  <option value="3">5만원 이상</option> 
+</select>
+</div>
+<div class="color">
+<select class="form-select" aria-label="Default select example">
+  <option selected>상의의 색상으로 가장 선호하는 것을 알려주세요. </option>
+  <option value="1">무채색(검정,흰색,회색)</option>
+  <option value="2">난색 계열 (빨간색, 주황색, 노란색, 갈색 등)</option>
+  <option value="3">한색 계열 (파란색, 하늘색, 청록색  등) </option>
+   <option value="4">기타 색상들 (보라색, 초록색 등) </option>  
+</select>
+</div>
+</select>
+<div class="fabric">
+<select class="form-select" aria-label="Default select example">
+  <option selected>상의의 사이즈 및 길이로  가장 선호하는 것을 알려주세요. </option>
+  <option value="1"> 사이즈:박시. 오버 사이즈 핏  </option>
+  <option value="2"> 사이즈:슬림 핏 </option>
+  <option value="3">길이: 롱 티</option> 
+   <option value="3">길이: 숏 티</option> 
+</select>
+</div>
+</div>
+ <h1> 하의 </h1> 
+<div class="bottomselection">
+<div class="type">
+<select class="form-select" aria-label="Default select example">
+  <option selected>하의의  종류 중에 가장 선호하는 것을 알려주세요. </option>
+  <option value="1">데님 팬츠 </option>
+  <option value="2">슬랙스 </option>
+  <option value="3">코튼 팬츠 </option> 
+  <option value="4">레더 팬츠</option> 
+</select>
+</div>
+<div class="price">
+<select class="form-select" aria-label="Default select example">
+  <option selected>하의의 가격으로 가장 선호하는 것을 알려주세요.</option>
+  <option value="1">3만원 이하</option>
+  <option value="2">3만원 이상 5만원 미만</option>
+  <option value="3">5만원 이상</option> 
+</select>
+</div>
+<div class="color">
+<select class="form-select" aria-label="Default select example">
+  <option selected>하의의 색상으로 가장 선호하는 것을 알려주세요. </option>
+  <option value="1">무채색(검정,흰색,회색)</option>
+  <option value="2">난색 계열 (빨간색, 주황색, 노란색, 갈색 등)</option>
+  <option value="3">한색 계열 (파란색, 하늘색, 청록색  등) </option>
+   <option value="4">기타 색상들 (보라색, 초록색 등) </option>  
+</select>
+</div>
+</select>
+<div class="fabric">
+<select class="form-select" aria-label="Default select example">
+  <option selected> 하이의 사이즈 및 길이를 가장 선호하는 것을  알려주세요.</option>
+  <option value="1"> 사이즈:  와이드 핏  </option>
+  <option value="2"> 사이즈: 슬림 핏 및 스키니 핏 </option>
+  <option value="3"> 숏 팬츠 </option>
+  <option value="3">롱 팬츠 </option>
+</select>
+</div>
+</div>
+ <h1> 외투 </h1> 
+<div class="outerselection">
+<div class="type">
+<select class="form-select" aria-label="Default select example">
+  <option selected>외투의  종류 중에 가장 선호하는 것을 알려주세요. </option>
+  <option value="1">블레이저 (테일러드 재킷) </option>
+  <option value="2">가디건 </option>
+  <option value="3">청자켓 및 레더 재킷</option> 
+  <option value="5">코트 류 </option>
+  <option value="6">점퍼 류 </option>
+  <option value="7">패딩  류 </option>
+</select>
+</div>
+<div class="price">
+<select class="form-select" aria-label="Default select example">
+  <option selected>외투의 가격으로 가장 선호하는 것을 알려주세요.</option>
+  <option value="1">7만원 이하</option>
+  <option value="2">7만원 이상 10만원 미만</option>
+  <option value="3">10만원 이상</option> 
+</select>
+</div>
+<div class="color">
+<select class="form-select" aria-label="Default select example">
+  <option selected>외투의 색상으로 가장 선호하는 것을 알려주세요. </option>
+  <option value="1">무채색(검정,흰색,회색)</option>
+  <option value="2">난색 계열 (빨간색, 주황색, 노란색, 갈색 등)</option>
+  <option value="3">한색 계열 (파란색, 하늘색, 청록색  등) </option>
+   <option value="4">기타 색상들 (보라색, 초록색 등) </option>  
+</select>
+</div>
+</select>
+<div class="fabric">
+<select class="form-select" aria-label="Default select example">
+  <option selected>외투의 사이즈 및 길이로  가장 선호하는 것을 알려주세요.</option>
+  <option value="1">사이즈: 박시 핏 오버 사이즈 핏  </option>
+  <option value="2">사이즈 : 슬림 핏 </option>
+  <option value="3">길이: 크롭 기장 </option>
+  <option value="4">길이: 롱 기장</option> 
+</select>
+</div>
+</div>
+
+<div class="button">
+ <a class="reset" href="#"> <h4 class="reset"> 초기화하기 </h4> </a>
+ <a class="save" href="#"> <h4 clas="save"> 저장하기 </h4> </a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="footer">
+<div class="leftpart"> 
+<a href="#"  class="fourwords"> Guide </a>
+<a href="#" class="fourwords"> Agreement </a> 
+<a href="#" class="fourwords"> Privacy policy </a>
+<a href="#" class="fourwords"> Contact us  </a>
+
+<h4> (주) 팰러스 / 서울시 용산구 한남대로 42가길 46, 5층 </h4>
+<p> utilizing@naver.com / 사업자 등록 번호:201-86-43867 </p>
+
+</div>
+
+<div class="rightpart">
+<h2> Social </h2>
+<a href="#" class="icon"> <img src="https://i.postimg.cc/jdFBjN8g/facebook.jpg" width=100%> </a>
+<a href="#" class="icon"> <img src="https://i.postimg.cc/ncq27DTc/instagram.jpg" width=100%> </a>
+
+
+</div>
+</div>
+
+
+
+</whole>
+</body>
+</html>
