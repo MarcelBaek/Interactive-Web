@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redesigning of modefied</title>
+<link href="https://fonts.gogleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+ <style>
+font-family:'Noto Sans KR', sans-serif;
+
+body{
+	width:1920px;
+	height:2800px;
+  margin:0;
+  color:#363636;
+ background-color:#F9F8F8;
+}
+
+.whole{
+	width:1636px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.header{
+	height:172px;
+	background-color:white;
+	text-align:center;
+}
+
+.search{
+  width:340px;
+  height:120px;
+  display:inline-block;
+  position:relative;
+  right:120px;
+}
+
+.header .deleteline {
+  text-decoration:none;
+}
+
+.header .helper{
+height:100%;
+display:inline-block;
+vertical-align:middle;
+}
+
+.header .logo{
+ display:inline-block;
+ vertical-align:middle;
+ margin:0px;
+ height:120px;
+}
+
+
+.header .three-icons{
+                           /* 세 아이콘들의 묶음을 띄워서 오른쪽에 위치시켜라 */   
+ display:inline-block;
+ vertical-align:middle;
+ position:relative;
+ left:140px;
+}
+
+.three-icons a:not(:last-child){         /* 마지막을 제외한 요소들의 오른쪽 마진을 98px로 주어라. */
+ margin-right:60px;
+}
+
+.icon {
+  width:96px;
+  height:96px;
+}
+
+.navigation{
+	font-family:'Roboto', sans-serif;
+    display:inline-block;
+	background-color:coral;
+	width:1636px;
+    height:92px; 
+    text-align:center;
+
+    font-weight:bold;
+  
+}
+
+.navigation .helper{
+	height:100%;
+display:inline-block;
+vertical-align:middle;
+}
+
+
+.navigation .oneline{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.navigation a{
+	color:#363636;
+	text-decoration:none;
+	font-size:26px;
+	margin-right:96px;
+}
+
+.main {
+  display:inline-block;
+}
+
+.main h2{
+  margin-top:40px;
+  font-size:26px;
+  margin-bottom:40px;
+}
+
+ .first {
+  font-weight:bold;
+  text-align:center;
+  font-size:26px;
+}
+
+
+.basicexplanation {
+ margin-top:40px;
+  width:1636px;
+  height:560px;
+  display:inline-block;
+  background-color:#CBCACA;
+}
+
+
+.basicexplanation .helper{
+  vertical-align:middle;
+  display:inline-block;
+  height:100%;
+}
+
+.basicexplanation .t-shirtsimage{
+  display:inline-block;
+  margin-left:40px;
+  position:relative;
+  bottom:150px;
+}
+
+.basicexplanation .name {
+  text-align:center;
+
+}
+
+.basicexplanation .helper{
+  vertical-align:middle;
+  display:inline-block;
+  height:100%;
+}
+
+.basicexplanation .wordpart{
+  width:1060px;
+  height:540px;
+  display:inline-block;
+  margin-left:80px;
+}
+
+.wordpart h2{
+font-size:32.50px;
+text-align:center;
+font-weight:bold;
+}
+
+.wordpart h3 {
+  font-size:20.80px;
+  color:#363636; 
+  margin-bottom:30px;
+}
+
+.wordpart .first-line {
+  display:inline-block;
+  margin-left:280px;
+}
+
+.wordpart .number{
+  display:inline-block;
+  margin-right:200px;
+}
+
+.wordpart .season {
+  display:inline-block;
+}
+
+
+.wordpart .second-line {
+  display:inline-block;
+  margin-left:280px;
+}
+
+.wordpart .viewed{
+  display:inline-block;
+  margin-right:200px;
+}
+
+.wordpart .sold {
+  display:inline-block;
+}
+
+.wordpart .third-line {
+  display:inline-block;
+  margin-left:280px;
+}
+
+.wordpart .like{
+  display:inline-block;
+  margin-right:210px;
+}
+
+.wordpart .review {
+  display:inline-block;
+  font-weight:bold;
+  position:relative;
+  right:4px;
+}
+
+.wordpart .fourth-line {
+display:inline-block;
+margin-left:280px;
+}
+
+.wordpart .size {
+  display:inline-block;
+  margin-right:120px;
+  font-weight:bold;
+}
+
+.wordpart .fabric {
+  display:inline-block;
+  font-weight:bold;
+  margin-left:14px;
+}
+
+.wordpart .buttons {
+  margin-top:40px;
+display:inline-block;
+margin-left:280px;
+}
+
+.buttons .presslike{
+display:inline-block;
+text-decoration:none;
+margin-right:80px;
+width:96px;
+height:96px;
+}
+
+.buttons .addtocart{
+display:inline-block;
+text-decoration:none;
+width:96px;
+height:96px;
+margin-right:80px;
+
+}
+
+.buttons .deleteline {
+text-decoration:none;
+}
+
+ .buttons .buynow{
+  padding:20px;
+  font-size:26px;
+  display:inline-block;
+ background-color:coral;
+ text-decoration:none;
+ color:white;
+ position:relative;
+ top:8px;
+}
+
+.bigtwo {
+  margin-top:80px;
+  width:1636px;
+  height:1231px;
+  display:inline-block;
+
+}
+
+.second {
+  font-weight:bold;
+  font-size:26px;
+text-align:center;
+}
+
+.detailed {
+  height:1231px;
+  width:778px;
+  display:inline-block;
+  
+}
+
+  .detailedexplanation {
+  display:inline-block;
+ width:778px;
+ height:1167px; 
+ background-color:#EEEEEE;
+   text-align:center;
+   margin-top:40px;
+  
+}
+
+
+.detailedexplanation h4{
+  margin-top:60px;
+  text-align:center;
+  font-size:26px;
+  font-weight:bold;
+  margin-bottom:40px;
+
+}
+
+.detailedexplanation .paragraph{
+
+  margin-left:20px;
+  margin-right:20px;
+  font-weight:20.80px;
+}
+
+.detailedexplanation img{
+
+  width:520px;
+  height:520px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.table {
+ 
+  border:2px solid black;
+  margin-left:;
+}
+
+.third {
+  font-size:26px;
+ text-align:center;
+ font-weight:bold;
+
+}
+
+.pic {
+ margin-top:70px;
+ display:inline-block;
+   margin-left:80px;
+   position:relative;
+   bottom:64px;
+}
+
+.pic h1{
+font-weight:bold;
+font-size:26px;
+text-align:center;
+}
+
+.pictures {
+  margin-top:40px;
+display:inline-block;
+ width:770px;
+ height:1167px;
+ background-color:gray;
+
+}
+
+.pictures .left {
+  margin-right:20px;
+}
+
+.pictures img {
+ width:350px;
+ height:540px; 
+ display:inline-block;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+.pictures .first-line {
+  margin-top:20px;
+  margin-left:20px;
+  height:540px;
+  width:730px;
+  display:inline-block;
+
+  margin-bottom:20px;
+}
+
+.pictures .second-line {
+  height:540px;
+  width:730px;
+  display:inline-block;
+  margin-top:20px;
+  margin-left:20px;
+  
+}
+
+.footer{
+  margin-top:80px;
+  height:360px;
+  background-color:#CBCACA;
+}
+.leftpart {
+  width:1000px;
+  height:360px;
+  margin-left:40px;  
+  display:inline-block;
+  position:relative;
+ bottom:60px;
+ 
+}
+
+ .fourwords{
+  margin-top:40px;
+  display:inline-block;
+ margin-right:40px;
+ font-size:26px;
+ text-decoration:none;
+ color:#363636;
+}
+
+.leftpart h4{
+  margin-top:40px;
+  font-size:16.64px;
+  color:#363636;
+}
+
+
+.leftpart p{
+  font-size:16.64px;
+  margin-top:40px;
+  color:#363636;
+}
+
+
+.rightpart {
+  display:inline-block;
+  width:532px;
+  height:360px;
+  text-align:center;
+  
+}
+.rightpart h2{ 
+font-weight:bold;
+font-size:26px;
+color:#363636;
+margin-bottom:40px;
+margin-top:40px;
+}
+
+.rightpart .icon{
+  display:block;
+  margin-bottom:40px;
+ margin-left:auto;
+  margin-right:auto;
+
+}
+
+
+
+ </style>
+
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+<div class="whole">
+
+
+<div class="header">
+   <div class="search">
+  <nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div>
+ <div class="helper"> </div> <a class="deleteline" href="*"> <img class="logo" src="https://i.postimg.cc/wvFZKYdy/Modified.jpg"> </a>
+ 
+ <div class="helper"> </div> <div class="three-icons">
+ <a class="deleteline" href="*"> <img class="icon" src="https://i.postimg.cc/HsFncHrC/my-page.jpg" > </a>
+<a class="deleteline" href="*"> <img class="icon" src="https://i.postimg.cc/25D5Gwdc/heart.jpg" > </a>
+<a class="deleteline" href="*"> <img class="icon" src="https://i.postimg.cc/3wFxcvnK/cart.jpg"> </a>
+ 
+ </div>
+ </div>
+
+
+ <div class="navigation">
+ <div class="helper"> </div> <div class="oneline">
+ <a  href="*"> ABOUT </a>
+<a href="*"> GUIDE </a>
+<a href="*"> NOTICE </a>
+<a href="*"> MY PAGE </a>
+<a href="*"> CLOTHES </a>
+<a href="*"> COLLECTION </a>
+</div>
+</div>
+
+<div class="main">
+<h2> 상의  >  티 셔츠 </h2>
+<h1 class="first"> 1. 기본적인 설명 </h1>
+
+ <div class="basicexplanation">
+<div class="helper"> </div> <img class="t-shirtsimage" src="https://i.postimg.cc/9MRScNdF/image.jpg">
+<div class="helper"> </div> <div class="wordpart">
+<h2 class="name"> 그린 네로우 스트라이트 티 셔츠 </h2>
+<div class="first-line"> 
+<h3 class="number"> 품번: M2001 </h3>
+<h3 class="season"> 시즌: 2021년 S/S </h3>
+</div> 
+<div class="second-line">
+<h3 class="viewed"> 조회 수: 400 </h3>
+<h3 class="sold"> 누적 판매 :200회 </h3>
+</div>
+<div class="third-line">
+<h3 class="like"> 좋아요: 120 </h3>
+<h3 class="review"> 평균 평점: 4.5 / 5  </h3>
+</div>
+<div class="fourth-line">
+<h3 class="size"> 사이즈: S, M, L, XL </h3>
+<h3 class="fabric"> 소재: (겉감) 면 100% </h3>
+</div>
+<div class="buttons">
+<a class="deleteline" href="*"> <img  class="presslike" src="https://i.postimg.cc/P55p7FpC/image.jpg" > </a>
+<a class="deleteline" href="*"> <img  class="addtocart" src="https://i.postimg.cc/sDdDSH9k/cart.jpg"> </a>
+<a class="deleteline" href='#'> <h4 class="buynow"> 바로 구매 </h4> </a> 
+</div>
+</div>
+</div>
+
+<div class="bigtwo">
+<div class="detailed">
+<h3 class="second"> 2.세부적인 설명 </h3>
+
+<div class="detailedexplanation">
+
+
+<h4> 1) 세 줄 설명 </h4>
+<p class="paragraph"> 캐주얼하게 입으실 수 있는 미들웨이드의 20수 스트라이프 원단으로 제작한 숏 슬리브 티셔츠입니다. 넥부분은 해리테에프마감을 하여 목늘어짐을 방지하였으며, 덤블(dumble) 워싱과 텐더링가공(tendering)을 하여 원단수축과 뒷틀림을 최소화 하였습니다. </p>
+
+<h4> 2) 각 부위에 대한 설명 </h4>
+<img src="https://i.postimg.cc/PxDdJfk9/image.jpg">
+
+<h4> 3) 각 사이즈에 대한 상세한 설명 </h4>
+<table class="table">
+<tr>
+  <th> 사이즈 </th>
+  <th> 총 길이 </th>
+  <th> 어깨 </th>
+  <th> 가슴 </th>
+  <th> 팔 </th>
+</tr>
+<tr>
+<td> M </td>
+<td> 70.5 </td>
+<td> 51 </td>
+<td> 54 </td>
+<td> 24 </td>
+</tr>
+
+<tr>
+<td> L </td>
+<td> 73 </td>
+<td> 53 </td>
+<td> 56 </td>
+<td> 25 </td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="pic">
+<h1 class="third"> 3. 사진들 </h1>
+<div class="pictures">
+<div class="first-line">
+<a href="#"> <img class="left" src="https://i.postimg.cc/jSdrc868/1.jpg" width=100> </a>
+<a href="#"> <img src="https://i.postimg.cc/FRctzwmK/2.jpg" width=100> </a>
+</div>
+
+<div class="second-line"> 
+<a href="#"> <img class="left" src="https://i.postimg.cc/hvbHbxXW/3.jpg" width=100> </a>
+<a href="#"> <img src="https://i.postimg.cc/qMpfBmFk/4.jpg" width=100> </a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="footer">
+<div class="leftpart"> 
+<a href="#"  class="fourwords"> Guide </a>
+<a href="#" class="fourwords"> Agreement </a> 
+<a href="#" class="fourwords"> Privacy policy </a>
+<a href="#" class="fourwords"> Contact us  </a>
+
+<h4> (주) 팰러스 / 서울시 용산구 한남대로 42가길 46, 5층 </h4>
+<p> utilizing@naver.com / 사업자 등록 번호:201-86-43867 </p>
+
+</div>
+
+<div class="rightpart">
+<h2> Social </h2>
+<a href="#" class="icon"> <img src="https://i.postimg.cc/jdFBjN8g/facebook.jpg" width=100%> </a>
+<a href="#" class="icon"> <img src="https://i.postimg.cc/ncq27DTc/instagram.jpg" width=100%> </a>
+</div>
+</div>
+
+
+
+</whole>
+</body>
+</html>
