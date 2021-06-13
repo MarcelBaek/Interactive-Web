@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Redesigningofmodefied</title>
+<link href="https://fonts.gogleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+ <style>
+font-family:'Noto Sans KR', sans-serif;
+
+body{
+	width:1920px;
+	height:2634px;
+  margin:0;
+  background-color:#F9F8F8;
+}
+
+.whole{
+	width:1636px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+ .header{
+	height:172px;
+	background-color:white;
+	text-align:center;
+}
+
+.search{
+  width:340px;
+  height:120px;
+  display:inline-block;
+  position:relative;
+  right:120px;
+}
+
+.header .deleteline {
+  text-decoration:none;
+}
+
+.header .helper{
+height:100%;
+display:inline-block;
+vertical-align:middle;
+}
+
+.header .logo{
+ display:inline-block;
+ vertical-align:middle;
+ margin:0px;
+ height:120px;
+ margin-left:auto;
+ margin-right:auto;
+ 
+}
+
+
+.header .three-icons{
+                           /* 세 아이콘들의 묶음을 띄워서 오른쪽에 위치시켜라 */   
+ display:inline-block;
+ vertical-align:middle;
+ position:relative;
+ left:140px;
+}
+
+.three-icons a:not(:last-child){         /* 마지막을 제외한 요소들의 오른쪽 마진을 98px로 주어라. */
+ margin-right:60px;
+}
+
+.navigation .icon {
+  width:96px;
+  height:96px;
+}
+
+.navigation{
+	font-family:'Roboto', sans-serif;
+    display:inline-block;
+	background-color:coral;
+	width:1636px;
+    height:92px; 
+    text-align:center;
+    margin-bottom:100px;
+    font-weight:bold;
+    margin-bottom:100px;
+}
+
+.navigation .helper{
+	height:100%;
+display:inline-block;
+vertical-align:middle;
+}
+
+
+.navigation .oneline{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.navigation a{
+	color:#363636;
+	text-decoration:none;
+	font-size:26px;
+	margin-right:96px;
+}
+
+
+.carousel-item{
+  height:400px;
+  background-color:gray;
+  background-size:cover;
+  text-align:center;
+}
+  .carousel-item.item1{
+   background-image:url('https://i.postimg.cc/BQpFrpVP/image.jpg');
+   background-position:center center;
+  }
+
+.carousel-item.item2{
+   background-image:url('https://i.postimg.cc/15r8f1bY/1.png');
+   background-position:center top;
+  }
+
+.carousel-item.item3{
+   background-image:url('https://i.postimg.cc/d3NnPNGq/1.jpg');
+   background-position:center center;
+  }
+.carousel-item .helper {
+   display:inline-block;
+  height:100%;
+  vertical-align:middle;
+}
+
+ .carousel-item .intro {
+ display:inline-block;
+  text-align:center;
+  vertical-align:middle;
+} 
+
+  .carousel-item .intro h2{ 
+    font-size:63.48px;
+    color:coral;
+    font-weight:bold;
+    margin-bottom:40px;
+    }
+
+ .carousel-item .intro h3{ 
+    font-size:26px;
+    color:#363636;
+    font-weight:bold;
+    margin-bottom:40px;
+    }
+
+    
+ .carousel-item .intro a{
+  text-decoration:none;
+  color:white;
+  }
+
+.carousel-item .intro .detail {
+display:block;
+margin-left:auto;
+margin-right:auto;
+ font-size:26px;
+ background-color:coral;
+  width:220px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.recommendation{
+  margin-top:80px;
+}
+
+.recommendation h1{
+	font-family:'Roboto', sans-serif;
+	font-size:26px;
+	font-weight:bold;
+	margin-bottom:40px;
+  color:#363636;
+  text-align:center;
+}
+
+
+.plane1 {
+  width:1636px;
+  height:400px;
+   display:block;
+  margin-left:auto;
+  margin-right:auto;  
+  background-color:#EEEEEE;
+}
+
+.recommendeditems{ 
+	width:1552px;
+  height:370px;
+
+  display:block;
+  margin-left:auto;
+  margin-right:auto;  
+}
+
+
+
+
+.recommendation .item1{
+  margin-top:40px;
+}
+
+.recommendation .item2{
+  margin-top:40px;
+}
+
+.recommendation .item3{
+  margin-top:40px;
+}
+
+.recommendation .item4{
+  margin-top:40px;
+}
+
+ .recommendeditems h2{
+ 	font-size:20.80px;
+ 	font-weight:bold;
+ 	margin-top:20px;
+  color:#363636;
+ }
+
+ .recommendeditems p{
+ 	font-size:16.64px;
+ 	margin-top:10px;
+  color:#363636;
+  margin-bottom:20px;
+
+ }
+
+.recommendeditems img{
+  width:255px;
+  height:264px;
+}
+
+
+ .recommendeditems .item1{
+  display:inline-block;     /* display:inline-block=다른 요소들과 한 줄에 있을 수 있다. */
+  text-decoration:none;
+  color:black;
+  text-align:center;
+}          
+ 
+ .recommendeditems .item2{
+  display:inline-block;     /* display:inline-block=다른 요소들과 한 줄에 있을 수 있다. */
+  text-decoration:none;
+  color:black;
+  text-align:center;
+}     
+
+ .recommendeditems .item3{
+  display:inline-block;     /* display:inline-block=다른 요소들과 한 줄에 있을 수 있다. */
+  text-decoration:none;
+  color:black;
+  text-align:center;
+}          
+ .recommendeditems .item4{
+  display:inline-block;     /* display:inline-block=다른 요소들과 한 줄에 있을 수 있다. */
+  text-decoration:none;
+  color:black;
+  text-align:center;
+}          
+ 
+
+.recommendeditems a:not(:last-child){         /* 마지막을 제외한 요소들의 오른쪽 마진을 170px로 주어라. */
+ margin-right:170px;
+}
+
+
+ .bigthree{
+  width:1636px;
+  height:840px;
+
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:80px;
+ }
+
+
+.bestsellers{
+  display:inline-block;
+}
+
+
+.bestsellers h1{
+  font-family:'Roboto', sans-serif;
+  font-size:26px;
+  font-weight:bold;
+  position:relative;
+  margin-bottom:40px;
+  color:#363636;
+  text-align:center;
+}
+
+.plane2 {
+  display:inline-block;
+  width:640px;
+  height:800px;
+  background-color:#FFF1F1;
+}
+
+.bestselleritems{ 
+  width:600px;
+  height:760px;
+  display:inline-block; 
+  margin-left:auto;
+ margin-right:auto;
+  margin-top:20px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.bestsellers  .item5, .item7{     /*사진, 제목, 가격의 크기를 고정해라.  */
+  width:255px;
+  height:350px;
+}
+
+ .bestselleritems h2{
+  font-size:20.80px;
+  font-weight:bold;
+  margin-top:20px;
+  color:#363636;
+ }
+
+ .bestselleritems p{
+  font-size:16.64px;
+  margin-top:10px;
+  color:#363636;
+  margin-bottom:60px;
+
+ }
+
+.bestselleritems img{
+  width:255px;
+  height:264px;
+}
+
+
+ .item5, .item6, .item7, .item8{
+  display:inline-block;     /* display:inline-block=다른 요소들과 한 줄에 있을 수 있다. */
+  text-decoration:none;
+  color:black;
+  text-align:center;
+}          
+ 
+
+.bestselleritems .item5, .item7{         /* 마지막을 제외한 요소들의 오른쪽 마진을 170px로 주어라. */
+ margin-right:80px;
+}
+
+.news{
+  margin-left:80px;
+  display:inline-block;
+
+}
+
+.news h1{
+  font-family:'Roboto', sans-serif;
+  font-size:26px;
+  font-weight:bold;
+  margin-bottom:40px;
+  color:#363636;
+  text-align:center;
+}
+
+.plane3 {
+  text-align:center;
+  display:inline-block;
+  width:320px;
+  height:800px;
+   background-color:#DEEAFF;
+}
+.newitems{ 
+  width:300px;
+  height:760px;
+  display:inline-block;   /* 베스트셀러와 신상품은는 같은 줄에 위치할 수 있다.*/ 
+  text-align:center;
+    margin-top:20px;
+}
+
+.newitems  .item9, .item10{     /*사진, 제목, 가격의 크기를 고정해라.  */
+  width:255px;
+  height:350px;
+}
+
+ .newitems h2{
+  font-size:20.80px;
+  font-weight:bold;
+  margin-top:20px;
+  color:#363636;
+ }
+
+ .newitems p{
+  font-size:16.64px;
+  margin-top:10px;
+  color:#363636;
+  margin-bottom:60px;
+
+ }
+
+.newitems img{
+  width:255px;
+  height:264px;
+}
+
+
+ .item9, .item10{
+  text-decoration:none;
+  text-align:center;
+}          
+ 
+.lookbook {
+  display:inline-block;      /* 베스트셀러, 신상품과 한 줄에 위치할 수 있다. */
+  margin-left:80px;
+  position:relative;
+  bottom:356px;
+
+}
+
+ .lookbook h1{
+ font-family:'Roboto', sans-serif;
+  font-size:26px;
+  font-weight:bold;
+  color:#363636;
+  text-align:center;
+  margin-bottom:40px;
+   }
+
+.plane4{
+background-color:gray;
+width:490px;
+height:800px;
+display:inline-block;
+text-align:center;
+}
+
+.plane4 .helper{
+height:100%;
+display:inline-block;
+vertical-align:middle;
+}
+
+
+.example{   
+display:inline-block;      /* 베스트셀러, 신상품과 한 줄에 위치할 수 있다. */
+ margin-left:auto;
+ margin-right:auto;
+ text-align:center;
+ vertical-align:middle;
+ text-decoration:none;
+}
+
+.example img{
+  width:295px;
+  height:530px;
+  display:inline-block;
+
+
+}
+
+.example h2{
+  margin-top:40px;
+  font-size:26px;
+ font-weight:bold;
+}
+
+.example .button{
+  display:inline-block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  font-size:26px;
+  background-color:coral;
+  text-decoration:none;
+  color:white;
+ font-size:26px;
+ padding:20px;
+
+}
+
+.footer{
+  margin-top:80px;
+  height:360px;
+  background-color:#CBCACA;
+}
+
+.leftpart {
+  width:1000px;
+  height:360px;
+  margin-left:40px;  
+  display:inline-block;
+  position:relative;
+  bottom:60px;
+}
+
+ .fourwords{
+  margin-top:40px;
+  display:inline-block;
+ margin-right:40px;
+ font-size:26px;
+ text-decoration:none;
+ color:#363636;
+}
+
+.leftpart h4{
+  margin-top:40px;
+  font-size:16.64px;
+  color:#363636;
+}
+
+
+.leftpart p{
+  font-size:16.64px;
+  margin-top:40px;
+  color:#363636;
+}
+
+
+.rightpart {
+  display:inline-block;
+  width:532px;
+  height:360px;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+.rightpart h2{ 
+font-weight:bold;
+font-size:26px;
+color:#363636;
+margin-bottom:40px;
+margin-top:40px;
+}
+
+.rightpart .footericon{
+  display:block;
+  margin-bottom:40px;
+ margin-left:auto;
+  margin-right:auto;
+  width:96px;
+  height:96px;
+}
+
+}
+
+
+
+ </style>
+
+</head>
+
+<body>
+
+
+<div class="whole">
+
+
+<div class="header">
+  <div class="search">
+  <nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div>
+
+ <div class="helper"> </div> <a class="deleteline" href="*"> <img class="logo" src="https://i.postimg.cc/wvFZKYdy/Modified.jpg"> </a>
+ 
+ <div class="helper"> </div> <div class="three-icons">
+ <a class="deleteline" href="Research.html"> <img class="icon" src="https://i.postimg.cc/HsFncHrC/my-page.jpg" > </a>
+<a class="deleteline" href="*"> <img class="icon" src="https://i.postimg.cc/25D5Gwdc/heart.jpg" > </a>
+<a class="deleteline" href="*"> <img class="icon" src="https://i.postimg.cc/3wFxcvnK/cart.jpg"> </a>
+ 
+ </div>
+ </div>
+
+
+ <div class="navigation">
+ <div class="helper"> </div> <div class="oneline">
+ <a  href="*"> ABOUT </a>
+<a href="*"> GUIDE </a>
+<a href="*"> NOTICE </a>
+<a href="*"> MY PAGE </a>
+<a href="*"> CLOTHES </a>
+<a href="*"> COLLECTION </a>
+</div>
+</div>
+
+
+     <div class="main">
+   <!--carousel--> 
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item item1 active">
+    <div class="helper"> </div> <div class="intro">   
+    <h2>  여름 옷 최대 30%  할인 </h2>
+    <h3>  2021.6.1~2021.6.30 </h3>
+ 
+    <a href="#"> <p class="detail"> 자세히 보기 </p> </a>
+    </div>
+    </div>
+
+    <div class="carousel-item item2">
+     <div class="helper"> </div> <div class="intro">
+    <h2> 블레이저의 명가, 모디파이드 </h2>
+
+
+    <a href="#"> <p class="detail"> 자세히 보기 </p> </a>
+    </div>  
+    </div>
+
+    <div class="carousel-item item3">
+     <div class="helper"> </div> <div class="intro">
+    <h2> 쿨링 하프 밴디드 쇼츠 </h2>
+    
+    <a href="#">  <p class="detail"> 자세히 보기  </p>  </a>
+    </div>  
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<div class="recommendation">
+<h1> 사용자 맞춤 추천 </h1>
+ <div class="plane1">
+ <div class="recommendeditems">
+ <a class="item1" href="#">	
+<img src="https://i.postimg.cc/G3sb9zP6/2.jpg" width=100%>
+<h2> 그레이 투 버튼 블레이저 </h2>
+<p> 108,000원 </p> 
+</a>
+
+ <a class="item2" href="#">	
+<img src="https://i.postimg.cc/Xv8VhPPK/image.jpg" width=100%>
+<h2> 슬림 스트레이트 워시드 진 </h2>
+<p> 48,000원 </p> 
+</a>
+
+<a class="item3" href="#">
+<img src="https://i.postimg.cc/DwNs0R82/image.jpg" width=100%>
+<h2> 슬림 핏 데님 팬츠 </h2>
+<p> 48,000원 </p> 
+</a>
+
+<a class="item4" href="#">
+<img src="https://i.postimg.cc/QMPR3GzC/2.jpg" width=100%>
+<h2> 블랙 2 버튼 블레이저 </h2>
+<p> 108,000원 </p> 
+</a>
+</div>
+</div>
+
+</div>
+
+<div class="bigthree">
+
+<div class="bestsellers">
+<h1> 이번 주의 베스트셀러 </h1>
+
+
+<div class="plane2">
+<div class="bestselleritems">
+
+<a class="item5" href="#">
+<img src="https://i.postimg.cc/LXKNDH7t/image.jpg"  width=100%>
+<h2> 체크 블레이저</h2>
+<p>120,000원   </p>
+</a>
+
+<a class="item6" href="#">
+<img src="https://i.postimg.cc/bNc23mzj/image.jpg"  width=100%>
+<h2>블랙  반팔 티셔츠    </h2>
+<p> 30,000원    </p>
+</a>
+
+<a class="item7" href="#">
+<img src="https://i.postimg.cc/KYRzZTZN/image.jpg"  width=100%>
+<h2>데님 숏 팬츠  </h2>
+<p> 35,000원    </p>
+</a>
+
+<a class="item8" href="#">
+<img src="https://i.postimg.cc/8C21NnXp/image.jpg"  width=100%>
+<h2>  라이트 베이지 슬랙스  </h2>
+<p> 54,000원 </p>
+</a>
+
+</div>
+</div>
+</div>
+
+
+<div class="news">
+<h1> 이번 주의 신상품들</h1>
+<div class="plane3">
+<div class="newitems">
+
+<a class="item9" href="StripeT-shirt.html">
+<img src="https://i.postimg.cc/9MRScNdF/image.jpg"  width=100%>
+<h2> 그린 스트라이프 티셔츠</h2>
+<p>33,000원   </p>
+</a>
+
+<a class="item10" href="#">
+<img src="https://i.postimg.cc/J03pnwGm/image.jpg"  width=100%>
+<h2>오버 핏  스트라이츠 셔츠    </h2>
+<p> 52,000원 </p>
+</a>
+</div>
+</div>
+</div>
+
+<div class="lookbook">
+<h1> 이번 주의 룩 북 </h1>
+<div class="plane4">
+  <div class="helper"> </div> <div class="example">
+  <img src="https://i.postimg.cc/MZsMqvpT/image.jpg" width=100%>
+ <h2> 썸머 데이트 룩  </h2>
+ <a href="#" class="button"> <h3> 자세히 보기 </h3> </a>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+<div class="footer">
+<div class="leftpart"> 
+<a href="#"  class="fourwords"> Guide </a>
+<a href="#" class="fourwords"> Agreement </a> 
+<a href="#" class="fourwords"> Privacy policy </a>
+<a href="#" class="fourwords"> Contact us  </a>
+
+<h4> (주) 팰러스 / 서울시 용산구 한남대로 42가길 46, 5층 </h4>
+<p> utilizing@naver.com / 사업자 등록 번호:201-86-43867 </p>
+
+</div>
+
+<div class="rightpart">
+<h2> Social </h2>
+<a href="#" class="footericon"> <img src="https://i.postimg.cc/jdFBjN8g/facebook.jpg" height=96> </a>
+<a href="#" class="footericon"> <img src="https://i.postimg.cc/ncq27DTc/instagram.jpg" height:96> </a>
+
+</div>
+</div>
+
+
+
+</whole>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>
